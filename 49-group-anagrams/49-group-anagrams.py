@@ -9,7 +9,7 @@ class Solution:
             else:
                 dictionary[ordered] = [string]
         res = []
-        for k, v in dictionary.items():
+        for v in dictionary.values():
             res.append(v)
         return res
         
