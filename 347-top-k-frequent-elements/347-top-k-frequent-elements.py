@@ -6,10 +6,8 @@ class Solution:
                 dictionary[i] += 1
             else:
                 dictionary[i] = 1
-        dictionary = {k: v for k, v in sorted(dictionary.items(), key=lambda item: item[1], reverse = True)}
-        count = 0
-        res = []
-        return list(dictionary.keys())[:k]
+        res = [key for key, v in sorted(dictionary.items(), key=lambda item: item[1], reverse = True)][:k]
+        return res
             
             
             
