@@ -21,15 +21,15 @@ class Solution:
                 else:
                     dic_row[str(j)] = [board[i][j]]
         for key in dic:
-            if len(set(dic[key])) != len(dic[key]):
-                print(key)
+            if len(set(dic[key])) != len(dic[key]):  
                 return False
+        dic = {}
 
         for key in dic_row:
             if len(set(dic_row[key])) != len(dic_row[key]):
-                print(key)
                 return False
-        return True
+        dic_row = {}
+        return True 
                 
                 
             
